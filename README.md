@@ -65,25 +65,6 @@ The app will automatically open in your browser at `http://localhost:8501`.
 
 ---
 
-## 🌐 How to Host (Web Hosting)
-
-### Option 1: Streamlit Community Cloud (Easiest)
-1. **Push your code to GitHub** (Ensure `.env` is NOT uploaded; the `.gitignore` I added will handle this).
-2. Go to [share.streamlit.io](https://share.streamlit.io) and connect your GitHub repo.
-3. **Important:** In the Streamlit Cloud dashboard, go to **Settings > Secrets** and paste your API key:
-   ```toml
-   OPENROUTER_API_KEY = "your_actual_key_here"
-   ```
-
-### Option 2: Render
-1. Push to GitHub.
-2. Create a new **Web Service** on [Render.com](https://render.com).
-3. Set **Build Command**: `pip install -r requirements.txt`
-4. Set **Start Command**: `streamlit run app.py --server.port $PORT`
-5. Add **Environment Variable**: `OPENROUTER_API_KEY` = `your_key`.
-
----
-
 ## 💡 Limitations
 - No OCR for scanned PDFs (text-based PDFs only).
 - Token limit: 12,000 characters from the document are sent to the AI.
