@@ -49,14 +49,8 @@ Open your terminal in the project folder and run:
 pip install -r requirements.txt
 ```
 
-### 3. API Key Configuration
-Create a file named `.env` in the root directory and add your key:
-```text
-OPENROUTER_API_KEY=your_actual_key_here
-```
-*(I have already created this file for you with your provided key!)*
 
-### 4. Launch the App
+### 3. Launch the App
 Run the following command:
 ```bash
 streamlit run app.py
